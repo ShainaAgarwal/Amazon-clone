@@ -1,4 +1,5 @@
-<img width="1440" height="612" alt="image" src="https://github.com/user-attachments/assets/e4c0ed3d-2bd3-4a4b-ac0f-a1db8af000b0" /><img width="1439" height="791" alt="image" src="https://github.com/user-attachments/assets/da22bd01-e9d8-4bd4-8e1c-0435b298ea9f" />Amazon Clone | Full-Stack MERN E-Commerce Platform
+
+Amazon Clone | Full-Stack MERN E-Commerce Platform
 
 A full-stack Amazon-inspired e-commerce platform built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). 
 This application provides a complete online shopping experience with secure authentication, shopping cart management, 
@@ -157,31 +158,52 @@ JWT_SECRET=your_secret_key
 6) Screenshots
 
 6.1) Home Page
-<img width="1440" height="792" alt="image" src="https://github.com/user-attachments/assets/03aad766-5229-46ba-8006-f617bcd87be4" />
+<img width="1439" height="791" alt="image" src="https://github.com/user-attachments/assets/da22bd01-e9d8-4bd4-8e1c-0435b298ea9f" />
+
+
 
 6.2) Login Page
 <img width="614" height="639" alt="image" src="https://github.com/user-attachments/assets/e5c8a0bb-e3ee-4c6f-b44d-b53878a53f79" />
 
+
+
 6.3) Registration Page
 <img width="760" height="689" alt="image" src="https://github.com/user-attachments/assets/930d7eb3-3aa6-40c7-a6ee-8c095c2866ee" />
+
+
 
 6.4) Shopping Cart
 <img width="1440" height="770" alt="image" src="https://github.com/user-attachments/assets/a10ecf3c-c023-4f02-a788-6e35b9937169" />
 
+
+
 6.5) Checkout
 <img width="1440" height="803" alt="image" src="https://github.com/user-attachments/assets/a414327c-8f2d-4965-aeb7-885606dff601" />
+
 <img width="1440" height="812" alt="image" src="https://github.com/user-attachments/assets/ae8264a2-7d3b-4a54-bf83-f3583013ad85" />
+
+
 
 6.6) User Profile
 <img width="1439" height="810" alt="image" src="https://github.com/user-attachments/assets/d40f6460-08f0-4e30-92f7-995b8cd87ee9" />
 
+
+
 6.7) Order History
+
+
+
 6.8) Admin Dashboard
 <img width="1440" height="812" alt="image" src="https://github.com/user-attachments/assets/79b58dd1-b0ce-426c-b4bc-4ed9d046379d" />
+
 <img width="1440" height="812" alt="image" src="https://github.com/user-attachments/assets/bfd438cf-f8e2-4a3b-a709-da644bf4bac9" />
+
+
 
 6.9) Product Management
 <img width="1440" height="612" alt="image" src="https://github.com/user-attachments/assets/b3f5f336-8eed-45a7-9630-77422040936d" />
+
+
 
 6.10) Inventory Management
 
