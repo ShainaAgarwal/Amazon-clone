@@ -1,0 +1,199 @@
+.profile-page-view {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  color: #0F1111;
+}
+
+.profile-navigation-crumbs {
+  font-size: 12px;
+  color: #565959;
+  margin-bottom: 12px;
+}
+
+.crumb-link {
+  color: #007185;
+  cursor: pointer;
+}
+
+.crumb-link:hover {
+  text-decoration: underline;
+  color: #C45500;
+}
+
+.profile-main-heading {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.profile-sub-heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 25px 0 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.profile-fallback-text {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+.profile-user-details-card {
+  background: #F8F9FA;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user-detail-row {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.user-detail-label {
+  font-weight: 700;
+  color: #565959;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.user-detail-value {
+  color: #0F1111;
+  font-weight: 500;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  .user-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .user-detail-label {
+    width: auto;
+  }
+}
+
+
+.profile-status-alert {
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-status-alert.success {
+  background-color: #EDF7ED;
+  color: #1E4620;
+  border: 1px solid #C3E6CB;
+}
+
+.profile-status-alert.error {
+  background-color: #FDF2F2;
+  color: #9B1C1C;
+  border: 1px solid #F8B4B4;
+}
+
+
+.address-card-workspace {
+  background: #FFF;
+  border: 1px solid #D5D9D9;
+  border-radius: 8px;
+  padding: 26px;
+  margin-bottom: 24px;
+}
+
+.amazon-address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-input-group label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.amazon-address-form input,
+.amazon-address-form select {
+  padding: 7px 10px;
+  border: 1px solid #A6A6A6;
+  border-radius: 3px;
+  font-size: 13px;
+  outline: none;
+  background-color: #FFF;
+}
+
+.amazon-address-form input:focus,
+.amazon-address-form select:focus {
+  border-color: #E77600;
+  box-shadow: 0 0 3px rgba(228, 121, 17, 0.5);
+}
+
+.split-address-line {
+  margin-top: 8px;
+}
+
+.form-grid-three-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 500px) {
+  .form-grid-three-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.form-actions-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.amazon-profile-save-btn {
+  background: #FFD814;
+  border: 1px solid #FCD200;
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213,217,217,.5);
+}
+
+.amazon-profile-save-btn:hover {
+  background: #F7CA00;
+}
+
+.amazon-profile-cancel-btn {
+  background: #FFF;
+  border: 1px solid #D5D9D9;
+  border-radius: 100px;
+  padding: 8px 18px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.amazon-profile-cancel-btn:hover {
+  background: #F7FAFA;
+}

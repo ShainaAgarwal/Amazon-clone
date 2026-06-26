@@ -1,0 +1,231 @@
+
+   .auth-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    
+    
+    background: radial-gradient(circle at 0% 0%, #1a2332 0%, transparent 45%),
+                radial-gradient(circle at 100% 100%, #11161d 0%, transparent 50%),
+                linear-gradient(135deg, #18202c 0%, #0d1117 100%);
+    background-attachment: fixed;
+  }
+  
+  .auth-logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff; 
+    margin-bottom: 22px;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-logo span {
+    color: #FF9900; 
+  }
+  
+  .auth-container {
+    width: 100%;
+    max-width: 380px; 
+    background: #FFFFFF;
+    padding: 30px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 
+                0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .auth-container h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0F1111;
+    letter-spacing: -0.3px;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    height: 36px; 
+    padding: 4px 10px;
+    border: 1px solid #A6A6A6;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #E77600;
+    box-shadow: 0 0 0 3px rgba(228, 121, 17, 0.25);
+  }
+  
+  
+  .auth-submit-btn {
+    width: 100%;
+    padding: 9px 0;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    border: 1px solid #a88734;
+    border-radius: 4px;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+    margin-top: 8px;
+    transition: background 0.1s ease;
+  }
+  
+  .auth-submit-btn:hover {
+    background: linear-gradient(to bottom, #f5d78e, #e3a61a);
+    border-color: #9c7e31;
+  }
+  
+  .auth-submit-btn:active {
+    background: #f0c14b;
+    box-shadow: rgba(0,0,0,.15) 0 1px 3px inset;
+  }
+  
+  
+  .auth-error-banner {
+    width: 100%;
+    max-width: 380px;
+    border: 1px solid #c40000;
+    background-color: #fff8f8;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .auth-error-content h4 {
+    color: #c40000;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 2px 0;
+  }
+  
+  .auth-error-content p {
+    color: #111111;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  
+  .auth-legal-notice {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555555;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .auth-legal-notice a {
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  .auth-legal-notice a:hover {
+    color: #c45500;
+    text-decoration: underline;
+  }
+  
+  
+  .auth-switch-link-row {
+    margin-top: 22px;
+    border-top: 1px solid #E7E7E7;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #333333;
+  }
+  
+  .auth-switch-link-row a {
+    color: #007185;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .auth-switch-link-row a:hover {
+    color: #c45500;
+    text-decoration: underline;
+  }
+  
+  
+  .auth-divider-break {
+    text-align: center;
+    position: relative;
+    margin: 24px 0 16px 0;
+    width: 100%;
+    max-width: 380px;
+  }
+  
+  .auth-divider-break h5 {
+    font-size: 12px;
+    color: #a2a6ac;
+    font-weight: 400;
+    background: transparent;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+  
+  
+  .auth-divider-break::after {
+    content: "";
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  .auth-create-account-btn {
+    width: 100%;
+    max-width: 380px;
+    padding: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .auth-create-account-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }

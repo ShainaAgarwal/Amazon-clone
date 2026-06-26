@@ -1,0 +1,130 @@
+/* ==========================================================================
+   AMAZON PREMIUM NAVIGATION CONSOLE STYLES
+   ========================================================================== */
+   .navbar {
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+  
+  .navbar-brand:hover {
+    border-color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .navbar-brand span {
+    color: #FEBD69;
+  }
+  
+  /* Premium Desktop Search Integration Engine */
+  .nav-search-container {
+    display: flex;
+    flex: 1;
+    max-width: 700px;
+    margin: 0 20px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .nav-search-field {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    color: #0F1111;
+  }
+  
+  .nav-search-field:focus {
+    box-shadow: 0 0 0 2px #F3A847 inset;
+  }
+  
+  .search-icon-badge {
+    background-color: #FEBD69;
+    height: 100%;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.1s ease;
+  }
+  
+  .search-icon-badge:hover {
+    background-color: #F3A847;
+  }
+  
+  /* Header Links Interactive States Workspace */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .navbar-links button, .navbar-links a {
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 44px;
+  }
+  
+  .navbar-links button:hover, .navbar-links a:hover {
+    border-color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .nav-line-one {
+    font-size: 12px;
+    color: #CCCCCC;
+    font-weight: 400;
+  }
+  
+  .nav-line-two {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  
+  /* Micro-interaction Dynamic Shopping Basket Counter */
+  .nav-cart-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-counter-bubble {
+    position: absolute;
+    top: -4px;
+    left: 14px;
+    background-color: transparent;
+    color: #F08804;
+    font-weight: 700;
+    font-size: 16px;
+  }
