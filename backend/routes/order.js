@@ -5,7 +5,6 @@ const Order = require('../models/Order');
 const Product = require('../models/Product'); 
 const { protect } = require('../middleware/auth');
 
-
 const getMyOrders = async (req, res) => {
   try {
     const orders = await Order.find({ user: req.user._id });
@@ -15,61 +14,42 @@ const getMyOrders = async (req, res) => {
   }
 };
 
-
 const createOrder = async (req, res) => {
-  const { cartItems, totalPrice, shippingAddress, billingAddress, paymentMethod } = req.body;
+  const { orderItems, totalPrice, shippingAddress } = req.body;
 
-  if (!cartItems || cartItems.length === 0) {
+  if (!orderItems || orderItems.length === 0) {
     return res.status(400).json({ message: 'No order items detected inside checkout manifest.' });
   }
 
-  
   const session = await mongoose.startSession();
   session.startTransaction();
 
   try {
-    
-    for (const item of cartItems) {
-      
-      const productId = item.product || item.id || item._id;
-      const product = await Product.findById(productId).session(session);
+    for (const item of orderItems) {
+      const product = await Product.findById(item.product).session(session);
 
       if (!product) {
-        throw new Error(`Product item matching configuration "${item.name || productId}" was not found.`);
+        throw new Error(`Product item matching configuration "${item.title || item.product}" was not found.`);
       }
 
       if (product.countInStock < item.quantity) {
         throw new Error(`Insufficient stock for "${product.name}". Only ${product.countInStock} items remaining.`);
       }
 
-      
       product.countInStock -= item.quantity;
       await product.save({ session });
     }
 
-    
-    const processedItems = cartItems.map((item) => ({
-      name: item.name,
-      qty: item.quantity,
-      image: item.image,
-      price: typeof item.cost === 'string' ? parseFloat(item.cost.replace('$', '')) : item.cost,
-      product: item.product || item.id || item._id
-    }));
-
     const order = new Order({
       user: req.user._id,
-      orderItems: processedItems,
+      orderItems,
       shippingAddress,
-      billingAddress,
-      paymentMethod,
       totalPrice,
-      isPaid: paymentMethod === 'COD' ? false : true, 
-      status: 'Processing'
+      isPaid: false
     });
 
     const createdOrder = await order.save({ session });
 
-    
     await session.commitTransaction();
     session.endSession();
 
@@ -80,7 +60,6 @@ const createOrder = async (req, res) => {
     });
 
   } catch (error) {
-    
     await session.abortTransaction();
     session.endSession();
 
@@ -89,8 +68,6 @@ const createOrder = async (req, res) => {
     });
   }
 };
-
-
 
 router.route('/')
   .post(protect, createOrder);

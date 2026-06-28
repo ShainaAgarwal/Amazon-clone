@@ -134,15 +134,33 @@ export default function Checkout({ onBackToCart, onOrderSuccess }) {
         Authorization: `Bearer ${userInfo.token}` 
       },
     };
-
+    const mappedOrderItems = cartItems.map(item => {
+      const numericPrice = typeof item.cost === 'string' 
+        ? parseFloat(item.cost.replace('$', '')) 
+        : Number(item.cost);
+    
+      return {
+        product: item.id,
+        title: item.name,
+        image: item.image,
+        price: numericPrice,
+        quantity: Number(item.quantity)
+      };
+    });
     
     const orderPayload = {
-      cartItems: cartItems,
+      orderItems: mappedOrderItems,
       totalPrice: Number(orderGrandTotal.toFixed(2)),
-      billingAddress: homeAddress, 
-      shippingAddress: finalShipping,
-      paymentMethod: paymentMethod
+      shippingAddress: {
+        addressLine1: finalShipping.addressLine1,
+        addressLine2: finalShipping.addressLine2 || '',
+        city: finalShipping.city,
+        state: finalShipping.state,
+        postalCode: finalShipping.postalCode,
+        country: finalShipping.country || 'United States'
+      }
     };
+    
 
     axios.post('https://amazon-clone-1-wo94.onrender.com/api/orders', orderPayload, config)
       .then((res) => {
