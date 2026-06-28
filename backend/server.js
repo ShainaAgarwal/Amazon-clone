@@ -7,8 +7,8 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: 'http://localhost:3000',
-    credentials: true
+  origin: 'https://amazon-clone-rho-ebon.vercel.app',
+  credentials: true
   }));
   
 app.use(express.json());
