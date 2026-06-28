@@ -16,7 +16,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://amazon-clone-1-wo94.onrender.com/api/auth/login', { email, password });
+      const res = await axios.post('https://amazon-clone-fgea.onrender.com/api/auth/login', { email, password });
       dispatch(
         loginSuccess({
           user: res.data.userInfo,

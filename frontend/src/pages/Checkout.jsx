@@ -52,7 +52,7 @@ export default function Checkout({ onBackToCart, onOrderSuccess }) {
     };
 
     
-    axios.get('https://amazon-clone-1-wo94.onrender.com/api/users/profile/address', config)
+    axios.get('https://amazon-clone-fgea.onrender.com/api/users/profile/address', config)
       .then((res) => {
         const addr = res.data.address; 
         if (addr) {
@@ -162,7 +162,7 @@ export default function Checkout({ onBackToCart, onOrderSuccess }) {
     };
     
 
-    axios.post('https://amazon-clone-1-wo94.onrender.com/api/orders', orderPayload, config)
+    axios.post('https://amazon-clone-fgea.onrender.com/api/orders', orderPayload, config)
       .then((res) => {
         setIsSubmitting(false);
         if (res.data.success) {

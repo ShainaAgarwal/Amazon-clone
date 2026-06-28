@@ -21,7 +21,7 @@ export default function PlacedOrders({ onBackToStore }) {
     };
 
     
-    axios.get('https://amazon-clone-1-wo94.onrender.com/api/orders/myorders', config)
+    axios.get('https://amazon-clone-fgea.onrender.com/api/orders/myorders', config)
       .then((res) => {
         setOrders(res.data);
         setLoading(false);

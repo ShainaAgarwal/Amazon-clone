@@ -13,7 +13,7 @@ export default function Register() {
     e.preventDefault();
     try {
       setError('');
-      await axios.post('https://amazon-clone-1-wo94.onrender.com/api/auth/register', {
+      await axios.post('https://amazon-clone-fgea.onrender.com/api/auth/register', {
         username: formData.username,
         email: formData.email,
         password: formData.password

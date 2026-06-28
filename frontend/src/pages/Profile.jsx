@@ -35,7 +35,7 @@ export default function Profile({ onBackToStore }) {
       headers: { Authorization: `Bearer ${userInfo.token}` },
     };
 
-    axios.get('https://amazon-clone-1-wo94.onrender.com/api/users/profile/address', config)
+    axios.get('https://amazon-clone-fgea.onrender.com/api/users/profile/address', config)
       .then((res) => {
         const addr = res.data.address; 
         if (addr && addr.addressLine1) {
@@ -80,7 +80,7 @@ export default function Profile({ onBackToStore }) {
       phoneNumber 
     };
 
-    axios.put('https://amazon-clone-1-wo94.onrender.com/api/users/profile/address', payload, config)
+    axios.put('https://amazon-clone-fgea.onrender.com/api/users/profile/address', payload, config)
       .then((res) => {
         setSuccessMessage(res.data.message || 'Home address configuration saved successfully!');
         setSavedAddress(payload); 
