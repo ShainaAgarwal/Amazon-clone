@@ -45,7 +45,7 @@ export default function Home() {
     setLoading(true);
     setError('');
 
-    axios.get(`http://localhost:5003/api/admin/public/products?page=${currentPage}&limit=8`)
+    axios.get(`https://amazon-clone-1-wo94.onrender.com/api/admin/public/products?page=${currentPage}&limit=8`)
       .then(res => {
         if (res.data.products) {
           setProducts(res.data.products);

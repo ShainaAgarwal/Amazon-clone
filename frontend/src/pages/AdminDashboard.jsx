@@ -24,15 +24,15 @@ export default function AdminDashboard() {
   const fetchInventory = () => {
     if (!token) return;
 
-    axios.get('http://localhost:5003/api/admin/users', { headers: { Authorization: `Bearer ${token}` } })
+    axios.get('https://amazon-clone-1-wo94.onrender.com/api/admin/users', { headers: { Authorization: `Bearer ${token}` } })
       .then(res => setUsers(res.data))
       .catch(err => console.error(err));
 
-    axios.get('http://localhost:5003/api/admin/orders', { headers: { Authorization: `Bearer ${token}` } })
+    axios.get('https://amazon-clone-1-wo94.onrender.com/api/admin/orders', { headers: { Authorization: `Bearer ${token}` } })
       .then(res => setOrders(res.data))
       .catch(err => console.error(err));
 
-    axios.get('http://localhost:5003/api/admin/products', { headers: { Authorization: `Bearer ${token}` } })
+    axios.get('https://amazon-clone-1-wo94.onrender.com/api/admin/products', { headers: { Authorization: `Bearer ${token}` } })
       .then(res => setProducts(res.data))
       .catch(err => console.error(err));
   };
@@ -44,7 +44,7 @@ export default function AdminDashboard() {
   const handleAddProduct = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5003/api/admin/products', productData, {
+      await axios.post('https://amazon-clone-1-wo94.onrender.com/api/admin/products', productData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMsg('Product launched into marketplace catalog successfully!');
