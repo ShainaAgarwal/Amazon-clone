@@ -28,7 +28,13 @@ const protect = (req, res, next) => {
     try {
       token = token.split(' ')[1];
       const decoded = jwt.verify(token, JWT_SECRET);
-      req.user = decoded; 
+      const resolvedId = decoded._id || decoded.id;
+      
+      req.user = {
+        ...decoded,
+        _id: resolvedId,
+        id: resolvedId
+      };
       next();
     } catch (error) {
       return res.status(401).json({ message: "Not authorized, token verified failed" });
