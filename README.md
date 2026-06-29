@@ -174,8 +174,12 @@ JWT_SECRET=your_secret_key
 
 
 
+
+
 6.3) Registration Page
 <img width="760" height="689" alt="image" src="https://github.com/user-attachments/assets/930d7eb3-3aa6-40c7-a6ee-8c095c2866ee" />
+
+
 
 
 
