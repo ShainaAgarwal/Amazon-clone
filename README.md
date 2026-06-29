@@ -171,6 +171,8 @@ JWT_SECRET=your_secret_key
 
 
 
+
+
 6.2) Login Page
 <img width="614" height="639" alt="image" src="https://github.com/user-attachments/assets/e5c8a0bb-e3ee-4c6f-b44d-b53878a53f79" />
 
