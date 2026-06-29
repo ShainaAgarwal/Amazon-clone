@@ -173,14 +173,14 @@ JWT_SECRET=your_secret_key
 
 
 6.4) Shopping Cart
-<img width="1440" height="770" alt="image" src="https://github.com/user-attachments/assets/a10ecf3c-c023-4f02-a788-6e35b9937169" />
+<img width="1440" height="592" alt="image" src="https://github.com/user-attachments/assets/a1a03d00-df55-4100-b8ce-ed42b2b4ed3c" />
 
 
 
 6.5) Checkout
-<img width="1440" height="803" alt="image" src="https://github.com/user-attachments/assets/a414327c-8f2d-4965-aeb7-885606dff601" />
+<img width="1440" height="798" alt="image" src="https://github.com/user-attachments/assets/53dfcf1e-feeb-47d3-8b24-b0547a2ba4f9" />
 
-<img width="1440" height="812" alt="image" src="https://github.com/user-attachments/assets/ae8264a2-7d3b-4a54-bf83-f3583013ad85" />
+<img width="1440" height="808" alt="image" src="https://github.com/user-attachments/assets/1900dab5-8e62-461e-9d79-6829ba642b75" />
 
 
 
@@ -190,6 +190,7 @@ JWT_SECRET=your_secret_key
 
 
 6.7) Order History
+<img width="1440" height="614" alt="image" src="https://github.com/user-attachments/assets/3f6442c9-f2fe-489b-b2fb-4c88465a6028" />
 
 
 
@@ -228,8 +229,13 @@ MongoDB + Mongoose
 
 
 
+8) Deployment
+Frontend: Vercel
+Backend: Render
+Database: MongoDB Atlas
 
-8) Future Improvements
+
+9) Future Improvements
 
 * Stripe/Razorpay Payment Integration
 * Product Reviews
