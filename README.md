@@ -8,7 +8,13 @@ order processing, inventory management, and an admin dashboard.
 The project demonstrates full-stack web development concepts including REST APIs, 
 JWT authentication, role-based authorization, Redux state management, MongoDB transactions, and responsive UI design.
 
+Live Demo 
+https://amazon-clone-rho-ebon.vercel.app
 
+Demo Admin Account
+
+Email: shainaagarwal333@gmail.com
+Password: Admin@123
 
 1)Features
 
@@ -203,7 +209,11 @@ JWT_SECRET=your_secret_key
 
 
 6.9) Product Management
+Before placing order( iphone 15 stock = 14)
 <img width="1440" height="612" alt="image" src="https://github.com/user-attachments/assets/b3f5f336-8eed-45a7-9630-77422040936d" />
+
+After placing order( iphone 15 stock = 13)
+<img width="1415" height="481" alt="image" src="https://github.com/user-attachments/assets/2843cb3f-e063-4505-8dab-1c92a2551859" />
 
 
 
