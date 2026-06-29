@@ -3,6 +3,7 @@ const router = express.Router();
 const { protect, adminOnly } = require('../middleware/auth');
 const Product = require('../models/Product');
 const User = require('../models/User');
+const Order = require('../models/Order');
 
 router.post('/products', protect, adminOnly, async (req, res) => {
   try {
@@ -30,6 +31,20 @@ router.get('/products', protect, adminOnly, async (req, res) => {
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: "Failed to fetch inventory catalog", error: error.message });
+  }
+});
+router.get('/orders', protect, adminOnly, async (req, res) => {
+  try {
+    const orders = await Order.find({})
+      .populate('user', 'email username') // Plucks user info automatically
+      .sort({ createdAt: -1 }); // Newest orders first
+      
+    res.json(orders);
+  } catch (error) {
+    res.status(500).json({ 
+      message: "Failed to fetch global order tracking logs", 
+      error: error.message 
+    });
   }
 });
 
