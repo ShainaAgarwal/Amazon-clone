@@ -208,6 +208,7 @@ JWT_SECRET=your_secret_key
 
 
 6.10) Inventory Management
+<img width="1421" height="410" alt="image" src="https://github.com/user-attachments/assets/fcc802f1-3eae-4598-a4a0-6757fe9be29b" />
 
 
 
