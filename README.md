@@ -48,6 +48,7 @@ JWT authentication, role-based authorization, Redux state management, MongoDB tr
 * View Customer Orders
 * Product Stock Management
 * Role-Based Access Control
+* Reduce in stock can be seen after placing order
 
 
 1.3) Product Management
